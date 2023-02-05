@@ -9,6 +9,7 @@ public class JavaStreams{
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(1,6,4,9,4,6,5);
 
+         
         ArrayList <String> arr = new ArrayList<>(Arrays.asList("Dylan","Dzvene","Pumba"));
 
         ArrayList <String> arr1 = (ArrayList<String>) arr.stream().filter(x->x.equals("Dylan")).collect(Collectors.toList());
