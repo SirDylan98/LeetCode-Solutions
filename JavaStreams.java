@@ -12,11 +12,11 @@ public class JavaStreams{
          
         ArrayList <String> arr = new ArrayList<>(Arrays.asList("Dylan","Dzvene","Pumba"));
 
-        ArrayList <String> arr1 = (ArrayList<String>) arr.stream().filter(x->x.equals("Dylan")).collect(Collectors.toList());
+        ArrayList <String> arr1 = (ArrayList<String>) arr.stream().filter(x->x.startsWith("D")).collect(Collectors.toList());
         System.out.println("Filter array is "+arr1);
 
 
-        List<Integer> mySet=  numbers.stream().map(x->x*x).collect(Collectors.toList());
-        System.out.println(mySet);
+         numbers.stream().map(x->x*x).forEach(y->System.out.println(y));
+       // System.out.println(mySet);
     }
 }
